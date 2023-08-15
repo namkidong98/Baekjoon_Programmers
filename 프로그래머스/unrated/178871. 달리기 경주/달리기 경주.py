@@ -1,3 +1,6 @@
+# index 메소드를 사용하는 것은 list를 for문으로 탐색하는 것이기 때문에 시간 복잡도에서 비효율적이다
+# for문의 방식이므로 O(n)의 시간복잡도인 반면 딕셔너리를 활용하면 O(1)에 탐색할 수 있다
+
 def solution(players, callings):
     player_dic = {player:rank for rank, player in enumerate(players)}
     rank_dic = {rank:player for rank, player in enumerate(players)}

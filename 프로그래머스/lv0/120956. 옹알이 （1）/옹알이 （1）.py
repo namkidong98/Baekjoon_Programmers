@@ -9,3 +9,15 @@ def solution(babbling):
             result += 1
             
     return result
+
+# 정규 표현식을 사용한 아래 풀이가 좋은 것 같다.
+# ^는 시작, $는 끝, +는 괄호 안의 요소가 한번 이상 반복됨을 의미
+# import re
+
+# def solution(babbling):
+#     regex = re.compile('^(aya|ye|woo|ma)+$')
+#     cnt=0
+#     for e in babbling:
+#         if regex.match(e):
+#             cnt+=1
+#     return cnt
